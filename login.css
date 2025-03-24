@@ -1,0 +1,171 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Login Container */
+.login-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Side (Logo) */
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Cursor Animation */
+.cursor {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Right Side (Login Form) */
+.form-container {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+/* Google Login Button */
+.google-btn {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.google-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Login Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Login Button */
+.login-submit {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-submit:hover {
+    background-color: #333;
+}
+
+/* Signup Text */
+.signup-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+.signup-link {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .logo-container {
+        padding: 1rem;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+        width: 100%;
+    }
+}
